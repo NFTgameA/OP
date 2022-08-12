@@ -4,8 +4,11 @@ const Post = require("../models/Post");
 //get all nft
 router.get("/", async (req, res) => {
   try {
+ 
+  
     const posts = await Post.find();
     res.json(posts);
+
   } catch (error) {
     res.json(error);
   }

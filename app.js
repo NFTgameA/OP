@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
   res.json("API-OP");
 });
 
-app.use("/api", postsRoute);
+app.use("/nft", postsRoute);
 
 
 // app.get("/posts", (req, res) => {
